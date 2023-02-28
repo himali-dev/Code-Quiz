@@ -1,0 +1,36 @@
+.viewScore{
+margin-left: 15px;
+color: rebeccapurple;
+float: left;
+padding: 1px 1px 1px 1px;
+}
+
+.time{
+  float: right;
+  color: rebeccapurple;
+  margin-right: 30px;
+}
+
+h1{
+  font-display: center;
+  display: block;
+  text-align: center;
+}
+
+.startquiz{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.button{
+  background-color: rebeccapurple;
+  border: 1px;
+  border-radius: 10pc;
+  text-align: center;
+  display: inline;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+}
