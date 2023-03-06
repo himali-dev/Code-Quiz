@@ -1,37 +1,31 @@
-.viewScore{
-margin-left: 15px;
-color: rebeccapurple;
-float: left;
-padding: 1px 1px 1px 1px;
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-
-.time{
-  float: right;
-  color: rebeccapurple;
-  margin-right: 30px;
-}
-.timer_sec{
-  float: right;
-  color: rebeccapurple;
-
-}
-h1{
-  font-display: center;
-  display: block;
+a{
   text-align: center;
+  text-decoration: none;
 }
-
 .startquiz{
   display:flex;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
-}
-p{
-  display: flex;
+  text-align: center;
 }
 
-button{
+
+h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+.start-btn{
   background-color: rebeccapurple;
   border: 1px;
   border-radius: 10pc;
@@ -42,4 +36,67 @@ button{
   padding: 15px;
   color: white;
   margin: auto;
+}
+.hide{
+  display: none;
+}
+
+h1, h2, h3 {
+  color: var(--tertiary-color);
+  border-top: 1px solid var(--tertiary-color);
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.btn{
+
+  background-color: rebeccapurple;
+  padding: 10px;
+  margin: 10px;
+  display: flexbox;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-grid{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+#leaderTable{
+  display: table;
+}
+
+.name,
+.score {
+  flex: 1 35%;
+  padding: 10px 0;
+  border: 1px solid black;
+
+}
+
+.highscore {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.scores a{
+  color:rebeccapurple;
+  cursor: pointer;
 }

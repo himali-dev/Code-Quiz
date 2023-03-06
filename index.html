@@ -8,38 +8,56 @@
   <title>Code-Quiz</title>
 </head>
 <body>
-<div class="header">
-  <div class="viewScore">View High Scores</div>
-  <div class="time">Time: </div>
-  <div class="timer_sec"></div>
-</div><br>
-<div class="time_line"></div>
-<div class="startquiz">
+  <header>
+<div class="scores">
+  <a id="viewHighScores">View High Scores</a>
+</div>
+
+<div id="timer" class="timer"></div>
+</header>
+
+<section id="start" class="start-quiz">
 <h1>Coding Quiz Challenge</h1>
   <p>Try to answer the following code-related questions within the time limit.
   Keep in mind that incorrect answers will penalize your score/time
-  by ten seconds!
+  by fifteen seconds!
   </p>
-  <br>
-  <section>
-    <div class="myQuesion"></div>
-    <div class="options_list"></div>
-  </section>
-</div>
+  <div class="controls">
+    <button id="start-button" class="start-btn">Start Quiz</button>
+  </div>
+</section>
 
+<section id="que-list" class="hide">
+  <h1 id="ques"></h1>
+  <div id="answer-buttons" class="btn-grid"></div>
+  <h2 id="ans" class="check-ans hide"></h2>
+  <h3 id="scoreDisplay"></h3>
+</section>
 
-<button class="startButton">Start Quiz</button>
-<div class="totalQue">
+<section id="score-container" class="hide">
+  <form id="submit-form">
+      <h3 id="your-score"></h3>
+      <label id="initials-label">Enter your initials to save the score:</label>
+      <input type="text" id="name-field" maxlength="3" placeholder="Enter your initials" />
+      <button id="submit-btn">Submit</button>
+      
+  </form>
+</section>
 
-</div>
-<button class="nxtBtn" style="display:none;">Next Que</button>
-<div class="resultBox">
+<section id="leaderboard" class="highscores-container hide">
+  <div>
+      <h1>Leaderboard</h1>
+      <div id="highscore" class="highscore highscore-list">
+      </div>
+      <div class="controls">
+          <button id="restart-btn">Restart</button>
+          <button id="clear-btn">Clear Scores</button>
+      </div>
+  </div>
+  
+</section>
+<script src="questions.js"></script>
+<script src="script.js"></script>
 
-<div class="complete" style="display:none;">You've completed the quiz</div>
-<button class="replay"style="display:none;">Replay</button>
-<button class="Quit" style="display:none;">Quit</button>
-
-</div>
-<script src="scipt.js"></script>
 </body>
 </html>
